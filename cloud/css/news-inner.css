@@ -1,0 +1,39 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color:#26292a;}
+ul,li{list-style:none;}
+body{width: 89.5%;margin: 0 auto;}
+/*头部区域*/
+header{width: 1720px;height: 100px;margin: 0 auto;position: relative;}
+header .logo{width: 82px;height: 80px;background: url("../images/logo.jpg") no-repeat;position: absolute;left: 0;bottom: 0;}
+header .toRight-1{width: 100px;height: 100px;position: absolute;right: 0;bottom: 0;background: url("../images/topRight_01.jpg") no-repeat;}
+
+.news-inner{height: 574px;}
+.news-inner .left{width: 839px;height:574px;float: left;padding-right: 41px;position: relative;font-family: "宋体";}
+.news-inner .left h3{font-size: 28px;color:#34495e;margin-top: 24px;}
+.news-inner .left span{color:#c33d4d;font-size: 12px;margin-left: 25px;font-weight: normal;}
+.news-inner .left p{font-size: 14px;line-height: 18px;color:#34495e;}
+.news-inner .left .p1{margin-top: 79px;}
+.news-inner .left .p2{margin-top: 18px;}
+.news-inner .right{width: 820px;height:574px;float:right;/*background: #e4e4e4;*/position: relative;}
+.news-inner .right .picture{width: 500px;height:290px;border:5px solid #545454;
+position: absolute;left:0;top:0;bottom:0;right:0;margin: auto;}
+.news-inner .right .pic-inner{width: 480px;height:270px;border:2px solid #545454;margin-top: 8px;
+    position: absolute;left:0;top:0;bottom:0;right:0;margin: auto;}
+.news-inner .right .pic-inner img{width: 471px;height:264px; /*position: absolute;left:0;top:0;bottom:0;right:0;*/margin: auto;display: none}
+
+.news-buttons{height:110px;margin:0 auto;}
+.news-buttons li{float: left;width:17px;height: 108px;border:1px solid #000;padding: 0 8px;position: relative;}
+.news-buttons .big a{display: block;position: absolute;top:10%;font-size: 18px;}
+.news-buttons .big .n-on{background:#006cae;border:1px solid #006cae;}
+.news-buttons .big .n-n{color:#fff;}
+.news-buttons .big{float: left;}
+.news-buttons .big li{margin-right: 29px;transition:all 0.5s;}
+.news-buttons .big li:hover{background:#006cae;border:1px solid #006cae;}
+.news-buttons .big li:hover a{color:#fff;}
+.news-buttons .small{float: right;}
+.news-buttons .small li{margin-left: 10px;transition:all 0.5s;}
+.news-buttons .small li:hover{background:#006cae;border:1px solid #006cae;}
+.news-buttons .small li:hover a{color:#fff;}
+.news-buttons .small a{display: block;position: absolute;top:22%;font-size: 18px;}
+ footer .thisChoose{left:82px;}
+ .news-beijing{background-color: #e4e4e4;position: absolute;right: -99px;top: 0;width: 941px;height: 100%;z-index: -1;}

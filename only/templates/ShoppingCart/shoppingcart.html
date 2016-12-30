@@ -1,0 +1,34 @@
+<ion-view view-title="我的购物车" hide-nav-bar="true">
+    <ion-header-bar>
+        <i class="icon ion-navicon" menu-toggle="left"></i>
+        <div class="title">我的购物车</div>
+    </ion-header-bar>
+    <ion-content class="has-header has-header-recommendation">
+
+        <div class="alert alert-warning" ng-show="cart.length==0">
+            <div class="icon ion-ios-cart-outline"></div>
+            您的购物车是空的。<a ui-sref="tabs.home">继续购物</a>
+
+        </div>
+        <ion-list show-delete="config.showDelete" show-reorder="config.showReorder" ng-show="cart.length!=0">
+            <ion-item class="item-thumbnail-left item-remove-animate"
+                      ng-repeat="item in cart">
+                <img ng-src={{item.product.image}}>
+                <h2>{{item.product.title}}</h2>
+                <p>单价：{{item.product.price | currency:"RMB ￥"}}</p>
+                <p>数量：{{item.number}}  件
+                    <span class="buttontj button-jj" ng-click="addto(item)">+</span>
+                    <span class="buttontj button-jjt" ng-click="reduce(item)">-</span></p>
+                <p>商品总计：{{item.product.price * item.number | currency:"RMB ￥"}}</p>
+                <!--选项按钮-->
+                <ion-option-button class="button button-assertive button-shopping" ng-click="remove(item)">删除</ion-option-button>
+            </ion-item>
+            <span class="zoj">购物车合计：{{totalMoney() | currency:"RMB ￥"}}</span>
+            <span class="zoj">
+                <a class="button button-assertive"  ng-click="toDetail()">确认付款</a>
+                 <a class="button button-positive" ng-click="clear()">清空购物车</a>
+            </span>
+
+        </ion-list>
+    </ion-content>
+</ion-view>

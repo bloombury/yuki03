@@ -1,0 +1,31 @@
+<ion-view view-title="餐厅" hide-nav-bar="true">
+    <ion-header-bar>
+        <i class="icon ion-navicon" menu-toggle="left"></i>
+        <div class="title">餐厅</div>
+    </ion-header-bar>
+    <ion-content class="has-header-home">
+        <div class="nav">
+            <button class="button button-dark button-clear" ui-sref="tabs.home">首页</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.bedroom">卧室</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.livingroom">客厅</button>
+            <button class="button button-dark" ui-sref="tabs.restaurant">餐厅</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.study">书房</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.kitchen">厨房</button>
+        </div>
+        <div class="recommendation">
+            <div class="class-head">
+                <img src="images/res-he.jpg">
+            </div>
+        </div>
+        <div class="recommendation">
+            <ion-list>
+                <div class="row" style="flex-wrap: wrap;">
+                    <div class="col-50 card card-mars" ng-repeat="content in data" ng-click="toDetail(content)">
+                        <img ng-src={{content.image}}>
+                        <p>{{content.title}}<span>￥ {{content.price}}</span></p>
+                    </div>
+                </div>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

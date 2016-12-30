@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.1.0.js" ></script>
+		<style type="text/css">
+			body{
+				background: black;
+			}
+			ul, li {
+				padding: 0px;
+				margin: 0px;
+				list-style: none;
+			}
+			.gallary {
+				width: 980px;
+				height: 500px;
+			}
+			.center {
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				top: 0px;
+				bottom: 0px;
+				margin: auto;
+			}
+			.gallary li{
+				position: absolute;
+				transition: transform 2s, left 3s, top 3s ;
+				background: white;
+			}
+			.item {
+				width: 100%;
+				height: 100%;
+				transition: transform 20s ease-in 2s;
+			}
+		</style>
+		<script type="text/javascript">
+		$(function(){
+			var rows = 5; // 行数
+			var collums = 5; // 列数 
+			var isFold = false; // 是否合拢
+			var gallary = $(".gallary");
+				
+			// 初始化: 
+			init();
+
+			// 初始化
+			function init(){
+				// 初始化25个li
+				var w = gallary.width() / collums; // 每项的宽度
+				var h = gallary.height() / rows;
+				
+				// 显示每一行
+				for(var r=0; r<rows; r++){
+					// 显示第r行
+					for(var c=0; c<collums; c++){
+						// 显示第r行第c列这张图
+						$("<li><div class='item'></div></li>")
+						.width(w).height(h)
+						.css({
+							"left": w*c + "px",
+							"top": h*r +"px"
+						})
+						.appendTo(gallary);
+					}
+				}
+				
+				// 展开
+				unfold();
+				
+				// 设置li的点击事件
+				gallary.find("li").click(function(){
+					if(!isFold) {
+						// 展开
+						unfold();
+					} else {
+						// 合拢
+						var index = $(this).index();
+						fold(index);
+					}
+				});
+				
+			}
+			
+			// 展开
+			function unfold(){
+				gallary.find("li").each(function(i){
+					var r = parseInt(i / collums);
+					var c = i % collums;
+					
+					var padding = 30;
+					var dx = c * padding - padding * (collums-1)/2;
+					var dy = r * padding - padding * (rows-1)/2;
+					var deg = Math.random() * 60 - 30;
+					
+					$(this).css("transform", "translate("+dx+"px, "+dy+"px) rotate("+deg+"deg)");
+				
+				}).find(".item").css("transform", "scale(0.97)").each(function(i){
+					$(this).css({"background-image": "url(images/"+i+".jpg", "background-size": "cover"});
+				});
+				isFold = true;
+			}
+			
+			// 合拢 显示index大图
+			function fold(index) {
+				gallary
+				.find("li")
+				.css({"transform":"translate(0px, 0px) rotate(0deg)"})
+				.find(".item")
+				.css({"background-image": "url(images/"+index+".jpg)", 
+					"background-size": "auto"})
+				.each(function(i){
+					var r = parseInt(i / collums);
+					var c = i % collums;
+					var x = c * 100/(collums-1);
+					var y = r * 100/(rows-1);
+					$(this).css("background-position", x+"% "+y+"%");
+				});
+				isFold = false;
+			}
+			
+		});
+		</script>
+	</head>
+	<body>
+		<ul class="gallary center">
+			
+		</ul>
+	</body>
+</html>

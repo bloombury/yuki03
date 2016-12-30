@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{width: 650px;margin: 0 auto;}
+        div{transform-style: preserve-3d;perspective: 800px;}
+        .box-3d{position: absolute;  top:66px;height: 66px;width: 100%;transform: rotateX(-90deg);transform-origin: top;background: url("images/16pic_470029_b.jpg");}
+        .box .box-warp{transform: rotateX(0deg);transform-origin: bottom;}
+        .box-1{background: url("images/16pic_470029_b.jpg") left 396px;}
+        .box-2{background: url("images/16pic_470029_b.jpg") left 330px;}
+        .box-3{background: url("images/16pic_470029_b.jpg") left 264px;}
+        .box-4{background: url("images/16pic_470029_b.jpg") left 198px;}
+        .box-5{background: url("images/16pic_470029_b.jpg") left 132px;}
+        .box-6{background: url("images/16pic_470029_b.jpg") left 66px;}
+        @keyframes show {
+            0%{transform: rotateX(-80deg);}
+            25%{transform: rotateX(7deg);}
+            50%{transform: rotateX(-7deg);}
+            75%{transform: rotateX(7deg);}
+            100%{transform: rotateX(0deg);}
+        }
+        .show{animation:show 1.5s;animation-fill-mode:forwards;}
+    </style>
+    <script>
+        window.onload=function(){
+            var box_1=document.getElementsByClassName('box-1')[0];
+            var boxWarp=document.getElementsByClassName('box-warp')[0].getElementsByTagName('div');
+            var i=0;
+            var n=1;
+            var timer;
+
+            box_1.onclick=function(){
+                timer=setInterval(function(){
+
+                    boxWarp[i].className='box-3d box-'+n+' show';
+                    i++;
+                    n++;
+                    console.log(i);
+                    if(i>5){
+                        clearInterval(timer);
+                    };
+                },300);
+            };
+        };
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="box-warp box-3d">
+        <div class="box-3d box-1">
+            <div class="box-3d box-2">
+                <div class="box-3d box-3">
+                    <div class="box-3d box-4">
+                        <div class="box-3d box-5">
+                            <div class="box-3d box-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

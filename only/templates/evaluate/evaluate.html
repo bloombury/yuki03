@@ -1,0 +1,33 @@
+<ion-view view-title="商品评论" hide-nav-bar="true">
+    <ion-header-bar>
+        <i class="icon ion-navicon" menu-toggle="left"></i>
+        <div class="title">商品评论</div>
+    </ion-header-bar>
+    <ion-content class="has-header has-header-recommendation">
+        <div class="nav nav-details">
+            <button class="button button-dark button-clear" ui-sref="tabs.details({id:001,title:'{{ptitle}}'})">详情</button>
+            <button class="button button-dark" ui-sref="tabs.evaluate">评论</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.parameter">参数</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.detailspage">售后</button>
+        </div>
+        <div class="recommendation">
+            <div class="card card-mar" ui-sref="tabs.details">
+                <img src="images/c7.jpg">
+                <p class="Detailspage">马戈贵妃沙发 丝绒面料 实木 <span>￥ 1,999.00</span></p>
+            </div>
+        </div>
+        <div class="text row">
+            <input type="text" placeholder="在此输入评论" ng-model="in.body" class="col-75">
+            <a class="text-button col-20" ng-click="Sendout()">确认发送</a>
+        </div>
+        <div class="list list-text">
+            <a class="item item-avatar item-text-wrap" href="" ng-repeat="content in content | orderBy:'-time'"  >
+                <img ng-src={{content.images}}>
+                <h2>{{content.name}}   <span>{{content.time*1000 | date:"yyyy-MM-dd HH:mm:ss"}}</span></h2>
+
+                <p>{{content.body}}</p>
+            </a>
+        </div>
+        <div id="top" ng-click="top()" class="ion-arrow-up-c"></div>
+    </ion-content>
+</ion-view>

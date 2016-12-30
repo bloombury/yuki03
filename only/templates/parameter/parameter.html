@@ -1,0 +1,31 @@
+<ion-view view-title="商品详情" hide-nav-bar="true">
+    <ion-header-bar>
+        <i class="ion-chevron-left iback-details" ng-click="back()"></i>
+        <div class="title">商品参数</div>
+    </ion-header-bar>
+    <ion-content class="has-header has-header-recommendation">
+        <div class="nav nav-details">
+            <button class="button button-dark button-clear" ui-sref="tabs.details({id:001,title:'{{ptitle}}'})">详情</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.evaluate">评论</button>
+            <button class="button button-dark " ui-sref="tabs.parameter">参数</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.detailspage">售后</button>
+        </div>
+        <div class="recommendation">
+            <div class="card card-mar">
+                <p class="title-par">外形尺寸</p>
+                <p class="Detailspage">一般尺寸 <span>H45*XW42*XD42  cm</span></p>
+                <p class="Detailspage">包装尺寸 <span>地块1：50x48个  33cm</span></p>
+            </div>
+        </div>
+        <div class="recommendation">
+            <div class="card card-mar">
+                <p class="title-par">产品详情</p>
+                <p class="Detailspage">部件 <span>押金完整装配</span></p>
+                <p class="Detailspage">包括说明 <span>完整全套说明书</span></p>
+                <p class="Detailspage">材质 <span>水曲柳木皮，胶合版，硬灰</span></p>
+                <p class="Detailspage">重量 <span>8kg</span></p>
+                <p class="Detailspage">SKU <span>STBEMSM023WHI-UK</span></p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

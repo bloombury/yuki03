@@ -1,0 +1,26 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,dl,dt,dd,input{padding: 0;margin: 0;}
+body{font-family:"Microsoft YaHei","宋体",sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none;} 
+img,input,textarea{border: none;}
+header,section,time,footer,nav{display: block;}
+.clear{*zoom: 1;}
+.clear:after{content: "200B";display: block;font-size: 0;height: 0;clear: both;}
+i{font-style: normal;font-family: consolas;}
+/*———————————————————————header———————————————————————*/
+header{height: 50px;background-color: #1c1c1c;position: fixed;top: 0;border-bottom: 1px solid #1c1c1c;width: 100%;z-index: 3;}
+header .logo{float: left;line-height: 50px;}
+header>a{float: right;display: block;height: 100%;width: 220px;color: #fff;font-size: 14px;line-height: 50px;text-align: center;background:#666666 url(../images/login_ico2.png) no-repeat 8px 7px;}
+header ul{float: left;width: 400px; position: absolute;left: 50%;top: 0;margin-left: -200px;}
+header li{float: left;width: 100px;line-height: 50px;font-size: 14px;text-align: center;}
+header .game{position: relative;}
+header li a{display: block;color: #9d9d9d;}
+header li .fa{color: #fff;line-height: 50px;position: absolute;top: 0px;right: 11px;font-size: 18px;}
+header li a:hover{color: #fff;}
+header li .now{background-color: #3e61ad;color: #fff;}
+header .fa-bars{line-height: 50px; font-size: 22px;color: #fff; float: right;margin-right: 15px;display: none;}
+/*—————————————————————footer—————————————————————————*/
+footer{text-align: center;background-color: #000;padding: 30px 35px 45px;color: #999;font-size: 14px;line-height: 29px;}
+footer .link{display: inline-block;}
+footer .link a{color: #999;margin-left: 2px;line-height: 52px;height: 52px;}
+footer .link a:hover{color: #fff;}

@@ -1,0 +1,15 @@
+
+/*企业文化内容区域*/
+.cultureContent{width: 1720px;height: 684px;margin: 0 auto;position: relative;}
+.cultureContent p{width: 1115px;line-height: 21px;font-size: 18px;font-family: "华文宋体";padding-left: 2px;padding-top: 95px;}
+.cultureContent .secondNav{height: 110px;position: absolute;left: 0;bottom: 0;}
+.cultureContent .secondNav li{width: 33px;height: 108px;border: 1px solid #000;font-size: 18px;float: left;margin-right: 29px;transition: all 500ms;}
+.cultureContent .secondNav li a{display: block;width: 100%;height: 88px;padding-top: 20px;color: #000000;}
+.cultureContent .secondNav li:hover{background-color: #006cae;border: 1px solid #006cae;}
+.cultureContent .secondNav li:hover a{color: #fff;height: 88px}
+.cultureContent .secondNav .active{background-color: #006cae;border: 1px solid #006cae;}
+.cultureContent .secondNav .active a{color: #fff;height: 88px}
+.cultureContent .secondNav li span{display: block;line-height: 18px;width: 100%;text-align: center;}
+
+/*菜单图标left值改变*/
+footer .thisChoose{left: 82px;}

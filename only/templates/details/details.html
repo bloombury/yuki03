@@ -1,0 +1,35 @@
+<ion-view hide-nav-bar="true">
+    <ion-header-bar>
+        <i class="ion-chevron-left iback-details" ng-click="back()"></i>
+        <div class="title">{{product.title}}</div>
+    </ion-header-bar>
+    <ion-content class="has-header has-header-recommendation">
+        <div class="nav nav-details">
+            <button class="button button-dark" ui-sref="tabs.details">详情</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.evaluate">评价</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.parameter">参数</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.detailspage">售后</button>
+        </div>
+        <div class="recommendation">
+            <div class="card card-mar">
+                <img ng-src={{product.imgsrc}}>
+                <p class="Detailspage">{{product.title}} <span>{{product.price | currency:"￥"}}</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <a class="text-shoppingcart col-40" ng-click="add(product)">加入购物车</a>
+            <a class="text-shopping col-40" ng-click="add(product)">立即购买</a>
+        </div>
+        <div class="recommendation">
+            <div class="card">
+                <img src="images/572b259cN94951cbe.jpg">
+                <img src="images/572b25a0Ncc43043d.jpg">
+                <img src="images/572b25a8N0f606d07.jpg">
+                <img src="images/572b25b3Ndaa8778d.jpg">
+                <img src="images/572b25c8N19b8d383.jpg">
+
+
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

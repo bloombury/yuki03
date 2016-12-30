@@ -1,0 +1,26 @@
+@media screen and (max-width: 980px) {
+	header>a{width: 60px;font-size: 0px;background:#666666 url(../images/login_ico.png) no-repeat 9px 5px;}
+	header .logo img{width: 180px;padding-top: 5px;}
+	.new .left,.new .right,.hot .left,.hot .right{float: none;width: 100%;}
+	.hot .right{margin-top: 60px;}
+	.video li{width: 33.33%;}
+	.video li p{display: none;}
+	.microblog li{margin-bottom: 20px;}
+}
+@media screen and (max-width: 880px) {
+	.new .left .text h3{font-size: 14px;}
+	.new .left .text time{font-size: 12px;}
+	.new .left .text{font-size: 12px;}
+	.gamelist h3{font-size: 14px;padding-top: 0;}
+	.video .last a{transform: translateY(130%);}
+}
+@media screen and (max-width: 750px) {
+	header .fa-bars{display: block;}
+	header ul{display: none;}
+	.banner span{width: 24px;height: 30px;}
+	.banner .fa{line-height: 30px;font-size: 18px;}
+	.hot .left .mix{float: none; width: 100%;margin: 0 0 40px 0;}
+	.gamelist li{float: none;width: 100%;padding:0 4px;}
+	.microblog li{width: 89.3%;}
+	.microblog li i{margin-right: 30px;}
+}

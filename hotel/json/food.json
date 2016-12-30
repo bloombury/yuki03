@@ -1,0 +1,44 @@
+{
+  "xiangyuan": {
+     "imgsrc":["images/details-pic01.png","images/details-pic02.png","images/details-pic03.png"],
+      "title":"湘苑食府",
+      "txt":["你需要的是一份有情怀的美食", "粤，味随季变，情在菜中","湘，本心所在，热情火辣", "甘鲜醇厚尽在舌尖","一馐一馔无不蕴含潇湘情调"],
+      "place":"地点：酒店3层 湘苑食府",
+      "time":["营业时间：","午餐:10:30-14:30", "晚餐:15:30-22:00"]
+  },
+  "siji": {
+    "imgsrc":["images/details-pic01.png","images/details-pic02.png","images/details-pic03.png"],
+    "title":"四季厅",
+    "txt":["你需要的是一份有情怀的美食", "粤，味随季变，情在菜中","湘，本心所在，热情火辣", "甘鲜醇厚尽在舌尖","一馐一馔无不蕴含潇湘情调"],
+    "place":"地点：酒店1层 四季厅",
+    "time":["营业时间：","午餐:10:30-14:30", "晚餐:15:30-22:00"]
+  },
+  "huiyi": {
+    "imgsrc":["images/details-pic01.png","images/details-pic02.png","images/details-pic03.png"],
+    "title":"会议自助餐",
+    "txt":["你需要的是一份有情怀的美食", "粤，味随季变，情在菜中","湘，本心所在，热情火辣", "甘鲜醇厚尽在舌尖","一馐一馔无不蕴含潇湘情调"],
+    "place":"地点：酒店1层 自助餐厅",
+    "time":["营业时间：","午餐:10:30-14:30", "晚餐:15:30-22:00"]
+  },
+  "lengcan": {
+    "imgsrc":["images/details-pic01.png","images/details-pic02.png","images/details-pic03.png"],
+    "title":"冷餐",
+   "txt":["你需要的是一份有情怀的美食", "粤，味随季变，情在菜中","湘，本心所在，热情火辣", "甘鲜醇厚尽在舌尖","一馐一馔无不蕴含潇湘情调"],
+    "place":"地点：酒店1层 自助餐厅",
+    "time":["营业时间：","午餐:10:30-14:30", "晚餐:15:30-22:00"]
+  },
+  "chaxie": {
+    "imgsrc":["images/details-pic01.png","images/details-pic02.png","images/details-pic03.png"],
+    "title":"茶歇",
+   "txt":["你需要的是一份有情怀的美食", "粤，味随季变，情在菜中","湘，本心所在，热情火辣", "甘鲜醇厚尽在舌尖","一馐一馔无不蕴含潇湘情调"],
+    "place":"地点：酒店3层 自助餐厅",
+    "time":["营业时间：","午餐:10:30-14:30", "晚餐:15:30-22:00"]
+  },
+  "datang": {
+    "imgsrc":["images/details-pic01.png","images/details-pic02.png","images/details-pic03.png"],
+    "title":"大堂吧",
+   "txt":["你需要的是一份有情怀的美食", "粤，味随季变，情在菜中","湘，本心所在，热情火辣", "甘鲜醇厚尽在舌尖","一馐一馔无不蕴含潇湘情调"],
+    "place":"地点：酒店3层 自助餐厅",
+    "time":["营业时间：","午餐:10:30-14:30", "晚餐:15:30-22:00"]
+  }
+}

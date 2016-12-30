@@ -1,0 +1,10 @@
+<ion-view view-title="热门推荐">
+    <ion-content class="has-header has-header-recommendation scroll-recommendation">
+        <div class="recommendation">
+            <div class="card-mar card" ng-repeat="content in data" ng-click="toDetail(content)">
+                <img ng-src={{content.image}}>
+                <p>{{content.title}} <span>{{content.price | currency:"￥"}}</span></p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

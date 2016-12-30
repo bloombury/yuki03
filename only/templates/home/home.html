@@ -1,0 +1,67 @@
+<ion-view view-title="唯一" hide-back-button="true" hide-nav-bar="true">
+    <ion-header-bar>
+        <i class="icon ion-navicon" menu-toggle="left"></i>
+        <div class="title">唯一</div>
+    </ion-header-bar>
+    <ion-content class="has-header-home">
+        <div class="nav">
+            <button class="button button-dark" ui-sref="tabs.home">首页</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.bedroom">卧室</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.livingroom">客厅</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.restaurant">餐厅</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.study">书房</button>
+            <button class="button button-dark button-clear" ui-sref="tabs.kitchen">厨房</button>
+        </div>
+        <ion-slide-box does-continue="true" auto-play="true" slide-interval="2500" show-pager="true">
+            <ion-slide>
+                <div class="box"><img src="images/lb1.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/lb2.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/lb3.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/lb4.jpg"/></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="recommendation" ui-sref="tabs.recommendation">
+            <h1 class="title">热门推荐</h1>
+            <div class="card card-mar">
+                <img src="images/gjjjsf_head.jpg">
+                <p>顾家家居沙发<span>￥ 3,799.00</span></p>
+            </div>
+        </div>
+        <div class="recommendation">
+            <h1 class="title">销量最高</h1>
+            <ion-list>
+                <div class="row" style="flex-wrap: wrap;justify-content:space-around">
+                    <div class="col-50 card card-mars" ng-click="toDetail(content)" ng-repeat="content in data">
+                            <img ng-src={{content.image}}>
+                            <p>{{content.title}}<span> {{content.price | currency:"￥"}}</span></p>
+                    </div>
+                </div>
+            </ion-list>
+        </div>
+        <div class="recommendation recommendation3">
+            <h1 class="title">猜你喜欢</h1>
+            <ion-scroll direction="x" scrollbar-x="false">
+                <ul class="guess">
+                    <li class="col-20 card card-mars mars">
+                        <img src="images/db1.jpg">
+                        <p>木斯德铭书桌</p>
+                    </li>
+                    <li class="col-20 card card-mars mars">
+                        <img src="images/db2.jpg">
+                        <p>苏谷床柜</p>
+                    </li>
+                    <li class="col-20 card card-mars mars">
+                        <img src="images/db3.jpg">
+                        <p>优居宜室沙发</p>
+                    </li>
+                </ul>
+            </ion-scroll>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,609 @@
+/**
+ * Created by hxsd on 2016/12/7.
+ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input,
+p,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+img,
+input,
+textarea {
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+.clear:after {
+  content: "200B";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+}
+.clear {
+  *zoom: 1;
+}
+/*侧滑栏宽度*/
+.swiper-container .menu {
+  max-width: 2.9rem;
+}
+/*分页按钮颜色*/
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.swiper-pagination span {
+  width: 0.16rem;
+  height: 0.16rem;
+}
+.swiper-wrapper {
+  position: relative;
+}
+/*侧滑菜单*/
+.swiper-container .swiper-slide-bg {
+  background: rgba(46, 26, 16, 0.9);
+  height: 100vh;
+}
+.swiper-slide .menu-nav {
+  margin-top: 3.28rem;
+  color: #fff;
+  font-size: 0.32rem;
+  padding-left: 0.26rem;
+}
+.swiper-slide .menu-nav li {
+  width: 1.68rem;
+  height: 1.08rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.swiper-slide .menu-nav li:before {
+  content: "";
+  height: 2px;
+  width: 1.68rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.swiper-slide .menu-nav a {
+  color: #fff;
+}
+/*主页*/
+.index {
+  font-family: "微软雅黑 Light";
+}
+.index .wrap {
+  width: 7.5rem;
+  height: 100vh;
+  background: url("../images/index-bg.png") no-repeat left top / cover;
+}
+.index .menu {
+  width: 3.1rem;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.index .logo {
+  width: 1.62rem;
+  margin-top: 0.48rem;
+  height: 1.42rem;
+}
+.index .menu-nav a {
+  color: #fff;
+}
+.index .menu-nav {
+  margin-top: 0.71rem;
+  font-size: 0.32rem;
+}
+.index .menu-nav li {
+  width: 1.68rem;
+  height: 1.08rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .menu-nav li:before {
+  content: "";
+  height: 2px;
+  width: 1.68rem;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #ffffff, rgba(0, 0, 0, 0));
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.index .menu-nav li:nth-child(1) {
+  color: #c98010;
+}
+/*通用头部标题*/
+.interchangeable {
+  font-family: "微软雅黑 Light";
+}
+.interchangeable .title {
+  width: 7.5rem;
+  height: 0.88rem;
+  background: #190d07;
+  font-size: 0.3rem;
+  color: #fff;
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.interchangeable .i-left {
+  width: 0.22rem;
+}
+.interchangeable .i-right {
+  width: 0.4rem;
+}
+/*康体娱乐*/
+.recreation {
+  font-family: "微软雅黑 Light";
+  background: url("../images/recreation-bg01.png") no-repeat left top / cover;
+}
+.recreation .content-pic {
+  width: 7.5rem;
+  height: 3.12rem;
+  margin-bottom: 0.1rem;
+  position: relative;
+  display: block;
+}
+.recreation .content-pic:nth-child(1) {
+  background: url("../images/recreation-content01.png") no-repeat left top / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recreation .content-pic:nth-child(2) {
+  background: url("../images/recreation-content02.png") no-repeat left top / cover;
+}
+.recreation .content-pic:nth-child(3) {
+  background: url("../images/recreation-content03.png") no-repeat left top / cover;
+}
+.recreation .content-pic:nth-child(4) {
+  background: url("../images/recreation-content04.png") no-repeat left top / cover;
+}
+.recreation .content-pic img {
+  width: 7.5rem;
+}
+.recreation .content-pic .p-top {
+  font-size: 0.24rem;
+  color: #fff;
+  width: 5.77rem;
+  display: block;
+  text-align: center;
+  line-height: 0.41rem;
+}
+.recreation .content-pic .p-title {
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.2rem 0 0 0.3rem;
+}
+/*康体娱乐详情*/
+.recreation-details .content .wrap {
+  overflow: hidden;
+}
+.recreation-details .content .wrap img {
+  width: 7.5rem;
+  height: 5.53rem;
+  margin: 0;
+}
+.recreation-details .content .wrap p {
+  font-size: 0.24rem;
+  margin-top: 0.47rem;
+}
+.recreation-details .content .wrap .span-title {
+  font-size: 0.32rem;
+}
+.recreation-details .content .btn {
+  font-size: 0.26rem;
+}
+/*餐饮美食*/
+.food-and-beverage .content-pic {
+  background: url("../images/food-and-beverage_02.png") no-repeat left top / cover;
+}
+.food-and-beverage .content-pic:nth-child(1) {
+  background-image: url("../images/food-and-beverage_02.png");
+}
+.food-and-beverage .content-pic:nth-child(2) {
+  background-image: url("../images/food-and-beverage_07.png");
+}
+.food-and-beverage .content-pic:nth-child(3) {
+  background-image: url("../images/food-and-beverage_04.png");
+}
+.food-and-beverage .content-pic:nth-child(4) {
+  background-image: url("../images/food-and-beverage_02.png");
+}
+.food-and-beverage .content-pic:nth-child(5) {
+  background-image: url("../images/food-and-beverage_02.png");
+}
+.food-and-beverage .content-pic:nth-child(6) {
+  background-image: url("../images/food-and-beverage_02.png");
+}
+.food-and-beverage .content-pic:nth-child(7) {
+  background-image: url("../images/food-and-beverage_02.png");
+}
+.food-and-beverage .content-pic .p-top {
+  width: 6.8rem;
+}
+/*餐饮美食详情*/
+.food-details {
+  background: #190d07;
+}
+.food-details .swiper-slide {
+  overflow: hidden;
+}
+.food-details .wrap {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.food-details .content {
+  height: 90vh;
+}
+.food-details .content img {
+  height: 4.52rem;
+  width: 100%;
+}
+.food-details .content .span-title {
+  font-size: 0.32rem;
+  display: block;
+}
+.food-details .content .span-map {
+  height: 0.16rem;
+  line-height: 0.16rem;
+  display: block;
+}
+.food-details .content p {
+  font-size: 0.24rem;
+  color: #fff;
+  width: 100vw;
+  line-height: 0.47rem;
+  margin-top: 0.47rem;
+}
+.food-details .content .time {
+  margin: 0.47rem 0 1rem 0;
+}
+.food-details .content .btn {
+  font-size: 0.26rem;
+  color: #fff;
+  width: 2.52rem;
+  border: 2px solid #fff;
+  height: 0.62rem;
+  line-height: 0.62rem;
+  position: absolute;
+  bottom: 0;
+  left: 2.49rem;
+  text-align: center;
+}
+.food-details .swiper-container-inner {
+  position: relative;
+}
+/*会议会展*/
+.meeting .content-pic .p-top {
+  width: 6rem;
+}
+.meeting .content-pic:nth-child(1) {
+  background-image: url("../images/meeting_02.png");
+}
+.meeting .content-pic:nth-child(2) {
+  background-image: url("../images/meeting_05.png");
+}
+.meeting .content-pic:nth-child(3) {
+  background-image: url("../images/meeting_07.png");
+}
+.meeting .content-pic:nth-child(4) {
+  background-image: url("../images/meeting_09.png");
+}
+/*多功能会议厅*/
+.meeting-details {
+  font-size: 0.24rem;
+  background: url("../images/meeting-details-bg.png") no-repeat left top / cover;
+  color: #6d3f28;
+  height: 100vh;
+}
+.meeting-details .content {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.26rem;
+}
+.meeting-details .content .wrap {
+  width: 5.29rem;
+  background: #fff;
+  padding-top: 0.32rem;
+  position: relative;
+  overflow: hidden;
+}
+.meeting-details .content .wrap:before {
+  content: "";
+  width: 1.51rem;
+  height: 1.51rem;
+  border-radius: 50%;
+  background: #321f0e;
+  position: absolute;
+  bottom: -0.755rem;
+  left: 35.7%;
+}
+.meeting-details .content img {
+  width: 5.29rem;
+  display: block;
+}
+.meeting-details .content p {
+  padding-left: 0.37rem;
+}
+.meeting-details .content span {
+  font-size: 0.3rem;
+  font-weight: bold;
+}
+.meeting-details .content p:nth-child(1) {
+  line-height: 0.44rem;
+  margin-bottom: 0.18rem;
+  font-size: 0.28rem;
+}
+.meeting-details .content p:nth-child(2) {
+  line-height: 0.39rem;
+  margin-bottom: 0.19rem;
+}
+/*婚庆婚宴*/
+.wedding .content .wrap {
+  padding: 0;
+  width: 4.52rem;
+  background: transparent;
+  margin-bottom: 0.59rem;
+}
+.wedding .content .wrap img {
+  border-radius: 0.15rem;
+  width: 4.52rem;
+  overflow: hidden;
+}
+.wedding .content p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 0.36rem;
+  font-size: 0.24rem;
+}
+.wedding .content .wrap:before {
+  content: "";
+  display: none;
+}
+/*商务办公*/
+.commerce .content {
+  overflow: hidden;
+}
+.commerce .content .wrap {
+  padding: 0;
+  width: 6.4rem;
+  border-radius: 0.25rem;
+}
+.commerce .content .wrap img {
+  width: 6.4rem;
+}
+.commerce .content .wrap p {
+  text-align: center;
+  padding: 0;
+  margin: 0.76rem 0 1.48rem 0;
+}
+.commerce .content .wrap:before {
+  content: "";
+  display: none;
+}
+/*舒适客房*/
+.comfort-room .content-pic {
+  background: url("../images/meeting-details-bg.png") no-repeat left top / cover;
+}
+.comfort-room .content-pic:nth-child(1) {
+  background-image: url("../images/comfort-room_02.png");
+}
+.comfort-room .content-pic:nth-child(2) {
+  background-image: url("../images/comfort-room_05.png");
+}
+.comfort-room .content-pic:nth-child(3) {
+  background-image: url("../images/comfort-room_07.png");
+}
+.comfort-room .content-pic:nth-child(4) {
+  background-image: url("../images/comfort-room_09.png");
+}
+.comfort-room .content-pic:nth-child(5) {
+  background-image: url("../images/comfort-room_05.png");
+}
+.comfort-room .content-pic:nth-child(6) {
+  background-image: url("../images/comfort-room_07.png");
+}
+.comfort-room .content-pic:nth-child(7) {
+  background-image: url("../images/comfort-room_09.png");
+}
+/*舒适客房详情*/
+.comfort-details .content .span-map {
+  display: none;
+}
+.comfort-details .content .time {
+  margin: 0;
+  font-size: 0.2rem;
+}
+.comfort-details .content p {
+  margin: 0;
+}
+/*客房预订*/
+.comfort-reserve {
+  background: #2e1a10;
+}
+.comfort-reserve .content {
+  height: 100%;
+}
+.comfort-reserve .content .swiper-slide {
+  height: 5rem;
+}
+.comfort-reserve .content img {
+  height: 5rem;
+}
+.comfort-reserve h2 {
+  font-size: 0.32rem;
+  color: #fff;
+  padding-left: 0.31rem;
+  line-height: 0.84rem;
+  height: 0.84rem;
+  display: block;
+}
+.comfort-reserve .ul-1 {
+  font-size: 0.28rem;
+  color: #fff;
+}
+.comfort-reserve .ul-1 li {
+  height: 0.89rem;
+  line-height: 0.89rem;
+  border-bottom: 1px solid #34220b;
+  background: #190d07;
+  padding: 0 0.31rem;
+}
+.comfort-reserve .ul-1 li:nth-child(4) {
+  border: none;
+  margin-bottom: 0.2rem;
+}
+.comfort-reserve .ul-1 li:nth-child(6) {
+  border: none;
+}
+.comfort-reserve .ul-1 .num {
+  width: 0.46rem;
+  text-align: center;
+  padding: 0;
+  height: 0.89rem;
+}
+.comfort-reserve .ul-1 li:nth-child(1) div {
+  display: inline-block;
+  width: 0.44rem;
+}
+.comfort-reserve input {
+  background: transparent;
+  color: #fff;
+  width: 3.4rem;
+  height: 0.89rem;
+  line-height: 0.89rem;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+}
+.comfort-reserve .ul-1 li:nth-child(4) input {
+  width: 5.5rem;
+}
+.comfort-reserve .ul-1 li:nth-child(6) input {
+  width: 5.5rem;
+}
+.comfort-reserve label input {
+  width: 0.20rem;
+  float: left;
+  margin-right: 0.1rem;
+}
+.comfort-reserve label {
+  display: inline-block;
+  height: 0.89rem;
+  line-height: 0.89rem;
+  float: right;
+}
+.comfort-reserve label {
+  margin-right: 0.20rem;
+}
+.comfort-reserve .tabTitle {
+  background: #190d07;
+  margin-top: 0.2rem;
+  height: 0.99rem;
+  line-height: 0.99rem;
+  font-size: 0.26rem;
+  color: #adacac;
+}
+.comfort-reserve .tabTitle div {
+  display: inline-block;
+  width: 49%;
+  border-bottom: 1px solid #34220b;
+  box-sizing: border-box;
+  padding-left: 0.28rem;
+}
+.comfort-reserve .tabTitle .active {
+  color: #fff;
+  border-bottom: 0.07rem solid #9f7b59;
+}
+.comfort-reserve .tabTxt {
+  font-size: 0.24rem;
+  height: 4.63rem;
+}
+.comfort-reserve .tabTxt p {
+  display: none;
+}
+.comfort-reserve .tabTxt p:nth-child(1) {
+  display: block;
+}
+.comfort-reserve .tabTxt {
+  background: #190d07;
+}
+.comfort-reserve .content .tabTxt p {
+  width: 7.5rem;
+  padding: 0.45rem 0.28rem;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 0.45rem;
+}
+.comfort-reserve .footer div {
+  width: 4.41rem;
+  font-size: 0.32rem;
+  display: inline-block;
+  height: 1.20rem;
+  line-height: 1.20rem;
+  color: #fff;
+  float: left;
+  padding-left: 0.28rem;
+}
+.comfort-reserve .footer a {
+  width: 2.79rem;
+  font-size: 0.38rem;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  background: #9f7b59;
+  height: 1.20rem;
+  line-height: 1.20rem;
+  float: right;
+}
+.comfort-reserve .remove img {
+  height: 0.45rem;
+  vertical-align: middle;
+}
+.comfort-reserve .add img {
+  height: 0.45rem;
+  vertical-align: middle;
+}
+.comfort-reserve .remove {
+  width: 0.42rem;
+}
+.comfort-reserve .add {
+  width: 0.42rem;
+  margin-left: 4.04rem;
+}

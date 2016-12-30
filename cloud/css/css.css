@@ -1,0 +1,37 @@
+*{ margin: 0; padding: 0;}
+img{ list-style: none}
+a{ text-decoration: none}
+.active{background-color: #006cae;border: 1px solid #006cae;}
+.listBox .active .activeColor{!important;color: #fff;}
+.picContent{width: 1720px;margin: 0 auto;}
+.bigBox{ width: 1212px; height: 390px; margin: 82px 0 103px;}
+.bigBox img{ width: 100%; height: 100%; transition: all 1s}
+.bigBox .box{  overflow: hidden;}
+.bigBox .left{ float: left; margin-right: 6px;}
+.bigBox .leftOne{ width: 227px; height: 389px; position: relative}
+.bigBox .leftTwo{ width: 227px;}
+.bigBox .small{ width: 100%; height: 191px; position: relative}
+.bigBox .smallTop{ margin-bottom: 6px;}
+.bigBox .leftThree{ width: 392px;  height: 389px; position: relative}
+.bigBox .leftFour{ width: 347px; margin-right: 0;}
+.bigBox span{ width: 100%; height: 100%; background: black; position: absolute; left: 0; top: 0; opacity: 0; transition: all 1s}
+.bigBox .box:hover img{ transform: scale(1.5)}
+.bigBox .box:hover span{ opacity: 0.6}
+.listBox{ margin-bottom: 20px; height: 100px;}
+.listBox .list{ width: 33px;height: 88px; padding-top:20px; cursor: pointer;border: 1px solid #000;font-size: 18px;float: left;margin-right: 29px;transition: all 500ms; text-align: center;}
+.listBox .list:hover{background-color: #006cae;border: 1px solid #006cae;}
+.listBox .list a{ width: 100%; height: 88px; display: block; color: #000}
+.listBox .list a:hover{color: #fff;height: 88px}
+.listBox .list span{ display: block;line-height: 18px;width: 100%;text-align: center;}
+
+
+.bannerBox{ width: 980px; height: 447px; padding: 64px 0;}
+.ballBox{ width: 980px; height: 133px; padding: 47px 0; border-bottom:2px solid #3f5664;}
+.ballBox .ball{ width: 129px; height: 53px; cursor: pointer; border: 2px solid #3f5664; border-radius: 50%; background: #3f5664; float: left; font: 20px/20px "微软雅黑"; text-align: center; padding: 40px 0; color: #fff; margin-right: 145px; position: relative}
+.ballBox .ball:last-child{ margin-right: 0;}
+.ballBox .ball p{ margin-top: 10px;}
+.ballBox .bgColor{ color: #3f5664; background: #fff;}
+.ballBox .ball span{ position: absolute; left: 50%; top: 133px; width: 2px; height: 0px; background: #405663;}
+.ballBox .ball .blue{ height: 47px}
+/*.ballBox .ball:hover .line{ height: 47px;}*/
+.bannerBox .desc{ font: 14px/22px "微软雅黑"; margin-top: 20px; padding-left: 26px;}

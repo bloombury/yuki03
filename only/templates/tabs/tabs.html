@@ -1,0 +1,35 @@
+<!--
+<ion-tabs class="tabs-positive tabs-icon-top">
+    <ion-tab title="主页" ui-sref="tabs.home">
+        <ion-nav-view name="tab-home"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="社区" ui-sref="tabs.parameter">
+        <ion-nav-view name="tab-parameter"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="我的" ui-sref="tabs.evaluate">
+        <ion-nav-view name="tab-evaluate"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>
+-->
+
+
+
+
+
+<ion-tabs class="tabs-icon-top tabs-home">
+    <ion-tab  title="主页" icon-on="ion-ios-home" icon-off="ion-ios-home-outline" ui-sref="tabs.home" class="tabion">
+        <ion-nav-view name="tab-home"></ion-nav-view>
+    </ion-tab>
+    <ion-tab  title="社区" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline" ui-sref="tabs.Community">
+        <ion-nav-view name="tab-Community"></ion-nav-view>
+    </ion-tab>
+    <ion-tab  badge=totalNumber() badge-style="badge-assertive" title="购物车" icon-on="ion-ios-cart" icon-off="ion-ios-cart-outline" ui-sref="tabs.shoppingcart">
+        <ion-nav-view name="tab-shoppingcart"></ion-nav-view>
+    </ion-tab>
+
+</ion-tabs>
+
+
+
+
+

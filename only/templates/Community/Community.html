@@ -1,0 +1,26 @@
+<ion-view view-title="唯一社区" hide-nav-bar="true">
+    <ion-header-bar>
+        <i class="icon ion-navicon" menu-toggle="left"></i>
+        <div class="title">社区</div>
+    </ion-header-bar>
+    <ion-content class="has-header has-header-recommendation">
+        <div class="list card" ng-repeat="content in content">
+            <div class="item item-avatar">
+                <img ng-src={{content.images}}>
+                <h2>{{content.name}}</h2>
+                <p>{{content.time*1000 | date:"yyyy-MM-dd HH:mm:ss"}}</p>
+            </div>
+            <div class="item item-body">
+                <img class="full-image" src="{{content.imagec}}">
+                <p>
+                    {{content.body}}
+                </p>
+                <p>
+                    <a  class="subdued zan"  ng-click="topup(content)">{{content[1].c}} 赞</a>
+                    <a  class="subdued">{{content[0]}} 阅读</a>
+                </p>
+            </div>
+        </div>
+       <!-- <div id="top" ng-click="top()" class="ion-arrow-up-c"></div>-->
+    </ion-content>
+</ion-view>

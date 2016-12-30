@@ -1,0 +1,21 @@
+/*首页内容*/
+.indexContent{height: 726px;width: 1720px;margin: 0 auto;position: relative;}
+.indexContent .indexContentNav{width: 392px;height: 577px;background: url("../images/index_bg_03.png") no-repeat;
+    position: absolute;left: 659px;top: 0;}
+.indexContent .indexContentNav span{width: 190px;line-height: 18px;font-size: 18px;-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);
+position: absolute;left: 284px;bottom: 461px;transform-origin: 0 0;}
+.indexContent .indexContentNav p{line-height: 34px;font-size: 37px;color: #006bac;width: 40px;position: absolute;left: 284px;top: 102px;}
+.indexContent .indexNav{padding-top: 95px;}
+.indexContent .indexNav li{float: left;padding-right: 115px;}
+.indexContent .indexNav li a{display: block;width: 100%;height: 100%;}
+.indexContent .indexNav li a p{width: 50px;float: left;}
+.indexContent .indexNav li a p span{display: block;width: 100%;line-height: 66px;color: #000;font-size: 56px;}
+.indexContent .indexNav li a .secondTitle{float: right;position: relative;width: 60px;height: 115px;}
+.indexContent .indexNav li a .secondTitle .engTitle{width: 120px;height: 15px;line-height: 15px;color: #be2237;font-size: 18px;-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);
+position: absolute;left: 23px;top: 12px;transform-origin: left;}
+.indexContent .indexNav li a .secondTitle .cnTitle{line-height: 23px;width: 25px;font-size: 22px;color: #be2237;position: absolute;right: 0;top:14px;}
+    /*菜单图标left值改变*/
+footer .thisChoose{left: -62px;}
+/*首页下方地址*/
+footer .address{line-height: 24px;font-size: 14px;color: #232323;position: absolute;left: 0;top: 126px;font-weight: bold;}
+

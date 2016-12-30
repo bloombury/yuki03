@@ -1,0 +1,31 @@
+/*样式预设*/
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+html{font-family: Arial,"华文楷体";background: url("../images/bg01.jpg") no-repeat right bottom;}
+body{width: 100%;height: 100%;position: relative;}
+/*清理浮动*/
+.clear:after{content: '200B';display: block;font-size: 0;height: 0;clear: both;}
+/*IE7/6*/
+.clear{*zoom: 1;}
+
+/*头部区域*/
+header{width: 1720px;height: 100px;margin: 0 auto;position: relative;}
+header .logo{width: 82px;height: 80px;background: url("../images/logo.jpg") no-repeat;position: absolute;left: 0;bottom: 0;}
+header .toRight{width: 100px;height: 100px;position: absolute;right: 0;bottom: 0;background: url("../images/topRight_02.jpg") no-repeat;}
+/*标题部分*/
+.cultureTitle{height: 100px;width: 1720px;margin: 0 auto;}
+.cultureTitle p{height: 44px;line-height: 44px;color: #000;padding-left: 2px;font-size: 30px;padding-top: 16px;}
+.cultureTitle span{height: 27px;line-height: 27px;padding-left: 1px;color: #be2237;font-size: 18px;}
+/*尾部区域*/
+footer{width: 1720px;height: 165px;margin: 0 auto;position: relative;}
+footer .nav_bg{width: 189px;height: 73px;background: url("../images/nav_icon.jpg") no-repeat;position: absolute;
+    top: 9px;}
+footer .first_nav{height: 73px;position: absolute;left: 0;top: 9px;}
+footer .first_nav li{float: left;width: 144px;height: 73px;}
+footer .first_nav li p{line-height: 25px;padding-left: 2px;padding-top: 16px;font-size: 20px;color: #232323;font-weight: bold;}
+footer .first_nav li span{line-height: 17px;font-size: 15px;padding-left: 2px;color: #c23144;font-weight: bold;}
+footer .copyright{height: 44px;line-height: 44px;font-size: 14px;color: #232323;position: absolute;left: 0;top: 82px;font-weight: bold;}
+footer .copyright span{line-height: 44px;padding-left: 25px;}
+footer .copyright .indexWeixin{display: block;width: 40px;height: 28px;float: right;background: url("../images/weixin.jpg") no-repeat;margin-top: 8px;cursor: pointer;}
+footer .copyright .indexWeibo{display:block;width: 34px;height: 28px;float: right;background: url("../images/weibo.jpg") no-repeat 0 4px;margin-top: 8px;margin-left: 15px;cursor: pointer;}

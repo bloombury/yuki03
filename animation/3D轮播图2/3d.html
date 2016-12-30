@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.slide {
+				width: 1000px;
+				height: 409px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.picture_box {
+				width: 1000px;
+				height: 409px;
+				transform-style: preserve-3d;
+				perspective: 1000px;
+			}
+			.picture_box div {
+				width: 1000px;
+				height: 409px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				
+				transform-origin: bottom;
+				transform: rotateX(-180deg);
+				opacity: 0;
+			}
+			.picture_box div:nth-child(1) {
+				transform: rotateX(0deg);
+				opacity: 1;
+				background-image: url(img/1.jpg);
+			}
+			.picture_box div:nth-child(2) {
+				background-image: url(img/2.jpg);
+			}
+			.picture_box div:nth-child(3) {
+				background-image: url(img/3.jpg);
+			}
+			.picture_box div:nth-child(4) {
+				background-image: url(img/4.jpg);
+			}
+			.picture_box div:nth-child(5) {
+				background-image: url(img/5.jpg);
+			}
+			.slide .nav div {
+				width: 45px;
+				height: 45px;
+				position: absolute;
+				top: 45%;
+			}
+			.slide .nav .pre{
+				background-image: url(img/l.png);	
+				left: -60px;
+			}
+			.slide .nav .next{
+				background-image: url(img/r.png);
+				right: -60px;	
+			}
+			
+			.trans {
+				transform: rotateX(0deg);
+				transform-origin: bottom;
+				
+				transition: transform 2s;
+				
+				/*transform: translate3D(0,0, 100px)*/
+			}
+			
+			.hide {
+				animation: hide .5s ease-in forwards;
+			}
+			
+			@keyframes hide{
+				0% {
+					transform: rotateX(0deg);
+					opacity: 1;
+				}
+				100% {
+					transform: rotateX(-180deg);
+					opacity: 0;
+				}
+			}
+			
+			.show {
+				animation: show 2s forwards;
+			}
+			
+			@keyframes show{
+				0% {
+					transform: rotateX(-180deg);
+					opacity: 0;
+				}
+				40% {
+					transform: rotateX(-400deg);
+					opacity: 1;
+				}
+				60% {
+					transform: rotateX(-325deg);
+					opacity: 1;
+				}
+				80% {
+					transform: rotateX(-380deg);
+					opacity: 1;
+				}
+				90% {
+					transform: rotateX(-345deg);
+					opacity: 1;
+				}
+				100% {
+					transform: rotateX(-360deg);
+					opacity: 1;
+				}
+			}
+			
+			
+			
+			
+		</style>
+		
+		<script type="text/javascript" src="js/jquery-3.1.0.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				var current = 0;
+				
+				$(".slide .next").click(function(){
+					$(".slide .picture_box div").eq(current).removeClass("show").addClass("hide");
+					current ++;
+					if (current == 5)
+						current = 0;
+					$(".slide .picture_box div").eq(current).removeClass("hide").addClass("show");
+				});
+				
+				$(".slide .pre").click(function(){
+					$(".slide .picture_box div").eq(current).removeClass("show").addClass("hide");
+					current--;
+					if (current < 0)
+						current = 4;
+					$(".slide .picture_box div").eq(current).removeClass("hide").addClass("show");
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="slide">
+			<div class="picture_box">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="nav">
+				<div class="pre"></div>
+				<div class="next"></div>
+			</div>
+		</div>
+			
+	</body>
+</html>

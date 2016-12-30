@@ -1,0 +1,173 @@
+
+
+.movieDetail{width: 100px;height: 100px;position: absolute;right: 0;bottom: 0;background: url("../images/topRight_01.jpg") no-repeat;}
+.movie_main {
+    width: 89.5%;
+    margin: 0 auto
+}
+
+.movie_top {
+    margin-left: 100px;
+}
+
+.movie_main .movie_top .movie_h1 {
+    width: 1.5em;
+    float: left;
+    font-size: 26px;
+    margin: 0 26px 0 0
+}
+
+.movie_main .movie_top {
+    margin-top: 120px;
+}
+
+.movie_main .movie_top a {
+    display: block;
+    float: left;
+    width: 1.5em;
+    text-align: center;
+    font-size: 20px;
+    color: #545454;
+    padding: 0 16px;
+    border-left: 1px dashed #545454;
+    font-weight: bold;
+}
+.movie_main .movie_top a:hover{color: #006cae;}
+.movie_top > .work {
+    display: none
+}
+
+.movie_bot {
+    margin-top: 100px;
+}
+
+.movie_bot ul li {
+    list-style: none;
+    float: left;
+    width: 1.5em;
+    border: 1px solid #000;
+    color: #1c1c1c;
+    margin-right: 29px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 17px;
+    cursor: pointer
+}
+
+.movie_bot ul .current {
+    background: #006cad;
+    border: 1px solid #006cad;
+    color: #fff
+}
+
+.movie_main .movie_detail .detail_left {
+    float: left;
+    width: 50%;
+    height: 684px;
+    font-family: "微软雅黑";
+}
+
+.movie_main .movie_detail .detail_right {
+    float: left;
+    width: 50%;
+    position: relative;
+    height: 684px
+}
+
+.movie_main .movie_detail .detail_left h2 {
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.movie_main .movie_detail .detail_left h2 span {
+    font-size: 12px;
+    color: #c23e4c;
+}
+
+.movie_main .movie_detail .details {
+    margin-top: 36px;
+}
+
+.movie_main .movie_detail .details p {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.movie_main .movie_detail .detail_left .introduce {
+    width: 96%;
+    font-size: 16px;
+    margin-top: 22px;
+    line-height: 24px;
+}
+.juzhaoqiehuan .show{
+    color:#006cad ;
+}
+.movie_main .movie_detail .detail_right .juzhaoqiehuan {
+    position: absolute;
+    left: -140px;
+    top: 0px;
+}
+.movie_main .movie_detail .detail_right .juzhaoqiehuan li{
+    cursor: pointer;
+}
+.movie_main .movie_detail .detail_right .juzhao {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 500px;
+    height: 290px;
+    border: 5px solid #545454;
+    margin-top: 19%;
+}
+
+.movie_main .movie_detail .detail_right .juzhao .juzhao_detail {
+    margin: 8px;
+    border: 2px solid #545454;
+    width: 480px;
+    height: 270px;
+}
+
+.movie_main .movie_detail .detail_right .juzhao .juzhao_detail .box {
+    overflow: hidden;
+    width: 474px;
+    height: 264px;
+    margin: 3px;
+    background-image: url("../images/haibao_01.jpg");
+    background-size: cover;
+}
+
+.movie_main .movie_detail .detail_right .juzhao .juzhao_detail img {
+    width: 100%
+}
+
+.movie_main .movie_detail .detail_right .changepage ul {
+    position: absolute;
+    right: 0px;
+    bottom: 0px
+}
+
+.movie_main .movie_detail .detail_right .changepage li {
+    width: 1.5em;
+    height: 78px;
+    float: left;
+    margin-left: 10px;
+    padding-top: 15px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+    cursor: pointer;
+}
+.bgColor{width: 50%;height: 100%;position: absolute;right: 0;top: 0;background-color: #e4e4e4;z-index: -1;}
+footer .thisChoose{left: 226px;}
+
+
+
+
+
+
+
